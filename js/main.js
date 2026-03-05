@@ -4,7 +4,7 @@
 (function () {
   'use strict';
 
-  // ---- Navbar scroll behaviour ----
+  // ---- Navbar scroll behavior ----
   const navbar = document.getElementById('navbar');
   function onScroll() {
     navbar.classList.toggle('scrolled', window.scrollY > 40);
