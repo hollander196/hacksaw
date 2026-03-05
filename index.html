@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dr. Alex Chen – Computational Researcher & Data Scientist specializing in machine learning, scientific computing, and large-scale data analysis." />
+  <meta name="author" content="Dr. Alex Chen" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dr. Alex Chen | Computational Researcher & Data Scientist" />
+  <meta property="og:description" content="Personal academic website of Dr. Alex Chen, researcher in machine learning, scientific computing, and data science." />
+  <meta property="og:type" content="website" />
+
+  <title>Dr. Alex Chen | Computational Researcher &amp; Data Scientist</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========================================
+       NAVIGATION
+       ======================================== -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="container navbar-inner">
+      <a href="#hero" class="navbar-brand">Dr. Alex <span>Chen</span></a>
+
+      <ul class="navbar-menu" id="navMenu" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="navbar-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========================================
+       HERO
+       ======================================== -->
+  <section class="hero" id="hero" aria-label="Introduction">
+    <div class="container hero-grid">
+
+      <!-- Left: Text -->
+      <div class="hero-content">
+        <span class="hero-badge">Open to Collaboration</span>
+
+        <h1 class="hero-name">Dr. Alex Chen</h1>
+        <p class="hero-title">Computational Researcher &amp; Data Scientist</p>
+
+        <div class="hero-affiliation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+          </svg>
+          <span>Institute for Advanced Computation · MIT CSAIL</span>
+        </div>
+
+        <p class="hero-description">
+          I develop scalable machine learning algorithms and computational methods to extract
+          meaningful insights from complex scientific data — bridging the gap between
+          high-performance computing and real-world discovery.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#publications" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+            </svg>
+            View Publications
+          </a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+
+      <!-- Right: Profile card -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="profile-card">
+          <div class="profile-avatar" aria-hidden="true">AC</div>
+          <h3>Dr. Alex Chen</h3>
+          <p>Ph.D. Computational Science<br />Postdoctoral Researcher</p>
+
+          <div class="profile-stats">
+            <div class="stat-item">
+              <span class="stat-value">42</span>
+              <span class="stat-label">Papers</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">1.8k</span>
+              <span class="stat-label">Citations</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">12</span>
+              <span class="stat-label">Projects</span>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <!-- GitHub -->
+            <a href="#" class="social-link" aria-label="GitHub profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            </a>
+            <!-- Google Scholar -->
+            <a href="#" class="social-link" aria-label="Google Scholar profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z"/></svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="#" class="social-link" aria-label="LinkedIn profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <!-- Twitter / X -->
+            <a href="#" class="social-link" aria-label="Twitter profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================
+       ABOUT
+       ======================================== -->
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="container">
+      <h2 class="section-title" id="about-title">About Me</h2>
+      <p class="section-subtitle">Background &amp; Interests</p>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am a postdoctoral researcher at MIT CSAIL, where I develop algorithms and
+            computational frameworks at the intersection of <strong>machine learning</strong>,
+            <strong>high-performance computing</strong>, and <strong>data science</strong>.
+            My work focuses on making large-scale scientific simulations faster, more accurate,
+            and more accessible.
+          </p>
+          <p>
+            My Ph.D. at Stanford University (Computational &amp; Mathematical Engineering, 2021)
+            explored physics-informed neural networks for solving partial differential equations
+            arising in fluid dynamics and climate modeling. I am passionate about bridging the
+            gap between theoretical computational methods and practical real-world impact.
+          </p>
+          <p>
+            Outside of research, I mentor undergraduates in data science, contribute to
+            open-source scientific computing packages, and occasionally write on my blog about
+            topics ranging from numerical methods to reproducible research practices.
+          </p>
+        </div>
+
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <div class="highlight-icon" aria-hidden="true">🎓</div>
+            <div>
+              <h4>Ph.D. – Stanford University, 2021</h4>
+              <p>Computational &amp; Mathematical Engineering · Advisor: Prof. L. Montgomery</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon" aria-hidden="true">🏛️</div>
+            <div>
+              <h4>Postdoctoral Fellow – MIT CSAIL, 2021–Present</h4>
+              <p>Scientific Machine Learning Group · Host: Prof. J. Williams</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon" aria-hidden="true">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>Cambridge, Massachusetts, USA</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon" aria-hidden="true">🏆</div>
+            <div>
+              <h4>Awards &amp; Honors</h4>
+              <p>NSF CAREER Nominee 2023 · Best Paper – NeurIPS Workshop 2022 · DOE CSGF Fellow 2018–2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       RESEARCH INTERESTS
+       ======================================== -->
+  <section class="section research-bg" id="research" aria-labelledby="research-title">
+    <div class="container">
+      <h2 class="section-title" id="research-title">Research Interests</h2>
+      <p class="section-subtitle">Core areas of focus and expertise</p>
+
+      <div class="research-grid">
+
+        <div class="research-card">
+          <span class="research-icon" aria-hidden="true">🧠</span>
+          <h3>Scientific Machine Learning</h3>
+          <p>Developing physics-informed neural networks and operator learning methods to accelerate PDE-constrained simulations in fluid dynamics, materials science, and climate modeling.</p>
+        </div>
+
+        <div class="research-card">
+          <span class="research-icon" aria-hidden="true">⚡</span>
+          <h3>High-Performance Computing</h3>
+          <p>Designing parallel and distributed algorithms for GPU clusters, with a focus on sparse linear algebra, domain decomposition, and scalable data pipelines for exascale computing.</p>
+        </div>
+
+        <div class="research-card">
+          <span class="research-icon" aria-hidden="true">📊</span>
+          <h3>Bayesian Uncertainty Quantification</h3>
+          <p>Applying Bayesian inference, Monte Carlo methods, and Gaussian processes to quantify uncertainty in computational simulations and observational data analyses.</p>
+        </div>
+
+        <div class="research-card">
+          <span class="research-icon" aria-hidden="true">🌐</span>
+          <h3>Graph Neural Networks</h3>
+          <p>Using GNNs and geometric deep learning to model structured scientific data such as molecular graphs, simulation meshes, and knowledge graphs in biomedical applications.</p>
+        </div>
+
+        <div class="research-card">
+          <span class="research-icon" aria-hidden="true">🔬</span>
+          <h3>Computational Biology</h3>
+          <p>Applying data-driven methods to protein structure prediction, single-cell RNA sequencing analysis, and computational drug discovery pipelines.</p>
+        </div>
+
+        <div class="research-card">
+          <span class="research-icon" aria-hidden="true">🔁</span>
+          <h3>Reproducible Research</h3>
+          <p>Building tools and best practices for reproducible, open, and FAIR computational science, including containerization, workflow management, and automated benchmarking.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       PUBLICATIONS
+       ======================================== -->
+  <section class="section" id="publications" aria-labelledby="pub-title">
+    <div class="container">
+      <h2 class="section-title" id="pub-title">Selected Publications</h2>
+      <p class="section-subtitle">Peer-reviewed papers, preprints, and book chapters</p>
+
+      <div class="pub-list">
+
+        <!-- Pub 1 -->
+        <article class="pub-item">
+          <div class="pub-meta">
+            <span class="pub-year">2024</span>
+            <span class="pub-type">Journal</span>
+            <span class="pub-venue">Nature Computational Science</span>
+          </div>
+          <h3>Neural Operator Learning for Fast Multiscale PDE Simulation at Scale</h3>
+          <p class="pub-authors">
+            <strong>A. Chen</strong>, R. Patel, L. Montgomery, J. Williams
+          </p>
+          <div class="pub-links">
+            <a href="#" class="pub-link">Paper</a>
+            <a href="#" class="pub-link">Code</a>
+            <a href="#" class="pub-link">Data</a>
+          </div>
+        </article>
+
+        <!-- Pub 2 -->
+        <article class="pub-item">
+          <div class="pub-meta">
+            <span class="pub-year">2023</span>
+            <span class="pub-type">Conference</span>
+            <span class="pub-venue">NeurIPS 2023</span>
+          </div>
+          <h3>Scalable Bayesian Optimization on High-Dimensional Function Landscapes via Sparse GPs</h3>
+          <p class="pub-authors">
+            <strong>A. Chen</strong>, S. Kumar, M. Zhao
+          </p>
+          <div class="pub-links">
+            <a href="#" class="pub-link">Paper</a>
+            <a href="#" class="pub-link">Slides</a>
+            <a href="#" class="pub-link">Poster</a>
+          </div>
+        </article>
+
+        <!-- Pub 3 -->
+        <article class="pub-item">
+          <div class="pub-meta">
+            <span class="pub-year">2023</span>
+            <span class="pub-type">Journal</span>
+            <span class="pub-venue">Journal of Computational Physics</span>
+          </div>
+          <h3>Hybrid Finite-Element/Machine Learning Solvers for Turbulent Flow Prediction</h3>
+          <p class="pub-authors">
+            T. Rivera, <strong>A. Chen</strong>, L. Montgomery
+          </p>
+          <div class="pub-links">
+            <a href="#" class="pub-link">Paper</a>
+            <a href="#" class="pub-link">Code</a>
+          </div>
+        </article>
+
+        <!-- Pub 4 -->
+        <article class="pub-item">
+          <div class="pub-meta">
+            <span class="pub-year">2022</span>
+            <span class="pub-type preprint">Preprint</span>
+            <span class="pub-venue">arXiv:2209.05132</span>
+          </div>
+          <h3>Graph Neural Operators for Solving Parametric PDEs on Irregular Domains</h3>
+          <p class="pub-authors">
+            <strong>A. Chen</strong>, Y. Liu, E. Thornton, J. Williams
+          </p>
+          <div class="pub-links">
+            <a href="#" class="pub-link">arXiv</a>
+            <a href="#" class="pub-link">Code</a>
+          </div>
+        </article>
+
+        <!-- Pub 5 -->
+        <article class="pub-item">
+          <div class="pub-meta">
+            <span class="pub-year">2021</span>
+            <span class="pub-type">Conference</span>
+            <span class="pub-venue">ICML 2021</span>
+          </div>
+          <h3>Physics-Informed Deep Learning with Uncertainty: A Variational Framework</h3>
+          <p class="pub-authors">
+            <strong>A. Chen</strong>, L. Montgomery
+          </p>
+          <div class="pub-links">
+            <a href="#" class="pub-link">Paper</a>
+            <a href="#" class="pub-link">Talk</a>
+            <a href="#" class="pub-link">Code</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       PROJECTS
+       ======================================== -->
+  <section class="section projects-bg" id="projects" aria-labelledby="proj-title">
+    <div class="container">
+      <h2 class="section-title" id="proj-title">Projects</h2>
+      <p class="section-subtitle">Open-source tools, research software, and side projects</p>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon" aria-hidden="true">🔭</div>
+            <span class="project-status active">Active</span>
+          </div>
+          <div class="project-body">
+            <h3>SciML-Bench</h3>
+            <p>A comprehensive benchmarking suite for scientific machine learning methods. Covers neural operators, PINNs, and hybrid solvers across a range of PDE families with standardized metrics and reproducible baselines.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">JAX</span>
+              <span class="tag">Docker</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                GitHub
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+              <a href="#" class="project-link">
+                Docs
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon" aria-hidden="true">🧮</div>
+            <span class="project-status active">Active</span>
+          </div>
+          <div class="project-body">
+            <h3>ParallelBayes</h3>
+            <p>A GPU-accelerated Bayesian inference library supporting variational inference, MCMC, and normalizing flows for large-scale probabilistic models in scientific computing applications.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">CUDA</span>
+              <span class="tag">NumPyro</span>
+              <span class="tag">MPI</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                GitHub
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+              <a href="#" class="project-link">
+                Paper
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon" aria-hidden="true">🌊</div>
+            <span class="project-status completed">Completed</span>
+          </div>
+          <div class="project-body">
+            <h3>FluidNet-3D</h3>
+            <p>End-to-end deep learning pipeline for 3D turbulent flow simulation using graph neural networks on unstructured meshes. Achieves 50× speedup over traditional finite-element solvers.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">PyG</span>
+              <span class="tag">FEniCS</span>
+              <span class="tag">HDF5</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                GitHub
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+              <a href="#" class="project-link">
+                Demo
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon" aria-hidden="true">🧬</div>
+            <span class="project-status active">Active</span>
+          </div>
+          <div class="project-body">
+            <h3>ProteinDiff</h3>
+            <p>Diffusion-model-based approach for conditional protein structure generation, enabling rapid in-silico design of novel proteins with desired functional properties.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">BioPython</span>
+              <span class="tag">Snakemake</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                GitHub
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+              <a href="#" class="project-link">
+                Preprint
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon" aria-hidden="true">📈</div>
+            <span class="project-status completed">Completed</span>
+          </div>
+          <div class="project-body">
+            <h3>ClimateML Dashboard</h3>
+            <p>Interactive web dashboard for visualizing and analyzing global climate model output. Integrates with CMIP6 datasets and provides on-the-fly statistical downscaling and anomaly detection.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Dash</span>
+              <span class="tag">xarray</span>
+              <span class="tag">Cartopy</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                Live Demo
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+              <a href="#" class="project-link">
+                GitHub
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon" aria-hidden="true">🤖</div>
+            <span class="project-status active">Active</span>
+          </div>
+          <div class="project-body">
+            <h3>AutoExperiment</h3>
+            <p>A self-driving laboratory framework that integrates Bayesian optimization with robotic experimental platforms to autonomously design and execute material synthesis experiments.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">BoTorch</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                GitHub
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+              <a href="#" class="project-link">
+                Talk
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       SKILLS
+       ======================================== -->
+  <section class="section" id="skills" aria-labelledby="skills-title">
+    <div class="container">
+      <h2 class="section-title" id="skills-title">Skills &amp; Tools</h2>
+      <p class="section-subtitle">Languages, frameworks, and platforms I work with</p>
+
+      <div class="skills-grid">
+
+        <!-- Programming Languages -->
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Python</span>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-width="95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">C / C++</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Julia</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-width="75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">MATLAB / R</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-width="70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">CUDA / OpenMP</span>
+                <span class="skill-pct">65%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-width="65%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ML & Data Science -->
+        <div class="skill-category">
+          <h3>ML &amp; Data Science</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">PyTorch / JAX</span>
+                <span class="skill-pct">92%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-width="92%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Scikit-learn</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">NumPy / SciPy</span>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-width="95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Pandas / Polars</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-width="88%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Hugging Face</span>
+                <span class="skill-pct">72%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-width="72%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Infrastructure & DevOps -->
+        <div class="skill-category">
+          <h3>Infrastructure &amp; DevOps</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Linux / HPC Clusters</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Docker / Apptainer</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Git / GitHub Actions</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-width="88%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Slurm / PBS</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-width="82%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">AWS / GCP</span>
+                <span class="skill-pct">68%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-width="68%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tools badges -->
+      <div style="margin-top: 3rem;">
+        <h3 style="font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--clr-text-muted); margin-bottom: 1rem;">Additional Tools &amp; Technologies</h3>
+        <div class="tools-grid">
+          <span class="tool-badge">🧪 Jupyter</span>
+          <span class="tool-badge">📉 Matplotlib</span>
+          <span class="tool-badge">📊 Seaborn</span>
+          <span class="tool-badge">🌐 Plotly</span>
+          <span class="tool-badge">⚗️ FEniCS</span>
+          <span class="tool-badge">🔢 PETSc</span>
+          <span class="tool-badge">🔗 MPI4py</span>
+          <span class="tool-badge">📦 Conda</span>
+          <span class="tool-badge">🦀 Rust</span>
+          <span class="tool-badge">🗄️ PostgreSQL</span>
+          <span class="tool-badge">🔄 Snakemake</span>
+          <span class="tool-badge">📋 MLflow</span>
+          <span class="tool-badge">🔭 Weights &amp; Biases</span>
+          <span class="tool-badge">🚀 FastAPI</span>
+          <span class="tool-badge">☸️ Kubernetes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       EXPERIENCE
+       ======================================== -->
+  <section class="section timeline-bg" id="experience" aria-labelledby="exp-title">
+    <div class="container">
+      <h2 class="section-title" id="exp-title">Experience</h2>
+      <p class="section-subtitle">Academic and professional positions</p>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-role">Postdoctoral Researcher</span>
+              <span class="timeline-period">2021 – Present</span>
+            </div>
+            <p class="timeline-org">MIT Computer Science &amp; AI Laboratory (CSAIL) · Cambridge, MA</p>
+            <ul>
+              <li>Lead the Scientific Machine Learning group's effort on neural operator methods for weather and climate prediction, collaborating with NOAA and ECMWF.</li>
+              <li>Developed <em>SciML-Bench</em>, a community benchmarking framework now used by 15+ research groups worldwide.</li>
+              <li>Mentored 4 Ph.D. students and co-supervised 3 undergraduate thesis projects.</li>
+              <li>Secured $450k in collaborative grant funding as co-PI on an NSF grant.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-role">Ph.D. Researcher</span>
+              <span class="timeline-period">2017 – 2021</span>
+            </div>
+            <p class="timeline-org">Stanford University · Institute for Computational &amp; Mathematical Engineering</p>
+            <ul>
+              <li>Dissertation: <em>"Uncertainty-Aware Physics-Informed Neural Networks for Multi-Physics Simulations"</em></li>
+              <li>Published 12 peer-reviewed papers; received DOE Computational Science Graduate Fellowship.</li>
+              <li>Teaching assistant for CS229 (Machine Learning) and CME 302 (Numerical Linear Algebra).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-role">Research Intern – Applied Science</span>
+              <span class="timeline-period">Summer 2019</span>
+            </div>
+            <p class="timeline-org">Google DeepMind · London, UK</p>
+            <ul>
+              <li>Designed transformer-based surrogate models for protein folding pathway prediction.</li>
+              <li>Reduced inference time by 40% through mixed-precision training and custom CUDA kernels.</li>
+              <li>Co-authored an internal technical report and filed a provisional patent.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-role">B.Sc. Mathematics &amp; Computer Science</span>
+              <span class="timeline-period">2013 – 2017</span>
+            </div>
+            <p class="timeline-org">University of California, Berkeley · Berkeley, CA</p>
+            <ul>
+              <li>Graduated <em>summa cum laude</em> with a double major; GPA 3.97/4.00.</li>
+              <li>Senior thesis: <em>"Spectral Methods for Stochastic Differential Equations"</em> — awarded departmental honors.</li>
+              <li>Research assistant in the Applied Numerical Analysis Lab (Prof. K. Sethian).</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       CONTACT
+       ======================================== -->
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <h2 class="section-title" id="contact-title">Get in Touch</h2>
+      <p class="section-subtitle">Open to collaborations, speaking invitations, and student inquiries</p>
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <h3>Let's Talk</h3>
+          <p>
+            Whether you are a researcher interested in collaboration, a student looking for guidance,
+            or an organization exploring data science partnerships — I'd love to hear from you.
+            Feel free to reach out via email or connect on any of the platforms below.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">✉️</div>
+              <div class="contact-item-text">
+                <span>Email</span>
+                <a href="mailto:alex.chen@csail.mit.edu">alex.chen@csail.mit.edu</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">📍</div>
+              <div class="contact-item-text">
+                <span>Office</span>
+                <p>Room 32-G512, Stata Center, 32 Vassar St, Cambridge, MA 02139</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">🐙</div>
+              <div class="contact-item-text">
+                <span>GitHub</span>
+                <a href="#">github.com/alexchen-sci</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">🎓</div>
+              <div class="contact-item-text">
+                <span>Google Scholar</span>
+                <a href="#">scholar.google.com/alexchen</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">💼</div>
+              <div class="contact-item-text">
+                <span>LinkedIn</span>
+                <a href="#">linkedin.com/in/alexchen-sciml</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" name="name" class="form-control" placeholder="Jane Smith" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" name="email" class="form-control" placeholder="jane@example.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" name="subject" class="form-control" placeholder="Collaboration / Student inquiry / Speaking" />
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" class="form-control" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       FOOTER
+       ======================================== -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container footer-inner">
+      <span class="footer-brand">Dr. Alex <span>Chen</span></span>
+      <nav aria-label="Footer navigation">
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <p>&copy; 2024 Dr. Alex Chen · Computational Researcher &amp; Data Scientist · Made with ♥ and science</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
